@@ -6,6 +6,10 @@
 
 当前仓库定位为**个人面试作品**，重点展示产品判断、AI 工程、RAG 数据链路、全栈实现和移动端交付能力，不按商业生产系统承诺可用性。
 
+- 产品官网：[https://yaokao-suji.netlify.app](https://yaokao-suji.netlify.app)
+- 在线体验：[https://yaokao-suji.netlify.app/app](https://yaokao-suji.netlify.app/app)
+- Android 下载：[GitHub Releases](https://github.com/22duxiaoyu/yaokao-suji/releases/latest)
+
 ## 核心流程
 
 ```mermaid
