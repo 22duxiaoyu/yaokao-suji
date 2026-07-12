@@ -1,7 +1,6 @@
 import path from "node:path";
 import { pathToFileURL } from "node:url";
 
-import { PDFParse } from "pdf-parse";
 import mammoth from "mammoth";
 
 import type { StudyMaterial } from "@/lib/mock-backend";
@@ -13,7 +12,7 @@ type ParsedFile = {
 
 let pdfWorkerConfigured = false;
 
-function configurePDFWorker() {
+function configurePDFWorker(PDFParse: typeof import("pdf-parse")["PDFParse"]) {
   if (pdfWorkerConfigured) return;
 
   const workerPath = path.join(process.cwd(), "node_modules", "pdfjs-dist", "legacy", "build", "pdf.worker.mjs");
@@ -45,7 +44,8 @@ function normalizeParsedText(text: string) {
 }
 
 async function parsePDF(buffer: Buffer) {
-  configurePDFWorker();
+  const { PDFParse } = await import("pdf-parse");
+  configurePDFWorker(PDFParse);
   const parser = new PDFParse({ data: buffer });
 
   try {
