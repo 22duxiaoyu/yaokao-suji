@@ -1,0 +1,39 @@
+# Dependencies and Next.js output
+node_modules/
+.next/
+tsconfig.tsbuildinfo
+.vercel/
+
+# Secrets and local runtime state
+.env
+.env.*
+!.env.example
+uploads/*
+!uploads/.gitkeep
+*.log
+.DS_Store
+
+# Android build output and signing material
+android-webview/build/
+android-webview/dist/
+android-webview/*.keystore
+
+# Other projects that share this local parent directory
+ai-wardrobe-cc/
+lobster-brain-demo/
+vibe-arch-draw/
+xiangqi-sandbox/
+yinian-lite/
+yinian-memos/
+
+# Internal handoff and superseded product research
+handoff/
+app/api/mimo/
+app/mimo-desktop-demo/
+docs/中国市场竞品拆解矩阵.md
+docs/龙虾脑Demo-一页纸方案-v0.1.md
+docs/AI后端前置定义.md
+docs/AI技术方案v1.0.md
+docs/Sprint1正式开发开工清单.md
+docs/后端技术方案.md
+docs/本地后端开发说明.md
