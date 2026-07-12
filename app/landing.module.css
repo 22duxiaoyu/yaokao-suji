@@ -74,8 +74,8 @@
 }
 
 .hero {
-  height: calc(100svh - 52px);
-  min-height: 760px;
+  height: calc(100svh - 112px);
+  min-height: 700px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -456,7 +456,7 @@
   }
 
   .hero {
-    height: 790px;
+    height: 748px;
     min-height: 0;
     padding: 48px 16px 0;
   }
