@@ -10,7 +10,7 @@ STAGING_DIR="$OUT_DIR/staging"
 APP_URL="${APP_URL:-}"
 
 if [[ "$APP_URL" != https://* ]]; then
-  echo "APP_URL must be the deployed HTTPS URL, for example https://yaokao-demo.vercel.app/" >&2
+  echo "APP_URL must be the deployed HTTPS URL, for example https://yaokao-suji.netlify.app/" >&2
   exit 1
 fi
 

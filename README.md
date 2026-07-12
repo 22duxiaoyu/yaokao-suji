@@ -32,7 +32,7 @@ flowchart LR
 - PostgreSQL + Drizzle 数据层
 - AI 调用记录、RAG 检索日志和 Prompt 版本数据模型
 - 本地文件 / Supabase Storage 双存储适配
-- Vercel Demo 上传与 AI 调用限额
+- Netlify Demo 上传与 AI 调用限额
 - Android WebView Demo APK 壳
 
 ## 技术架构
@@ -45,7 +45,7 @@ flowchart LR
 | AI | DeepSeek V4 Flash、JSON 结构化输出 |
 | RAG | 资料分块、关键词混合召回、来源追溯 |
 | 文件 | 本地文件系统 / Supabase Storage |
-| 部署 | Vercel Hobby + Supabase Free |
+| 部署 | Netlify Free + Supabase Free |
 | Android | 原生 WebView 壳、APK 签名脚本 |
 
 详细设计见 [作品集架构说明](docs/作品集架构说明.md)。
@@ -95,7 +95,7 @@ GET /api/demo/status
 
 推荐使用：
 
-- Vercel Hobby：Next.js 网站与 API
+- Netlify Free：Next.js 网站与 API
 - Supabase Free：PostgreSQL 与私有文件存储
 - GitHub Releases：Android APK 下载
 - DeepSeek：设置小额余额和每日调用上限
@@ -108,7 +108,7 @@ GET /api/demo/status
 
 ```bash
 cd android-webview
-APP_URL=https://your-project.vercel.app/ ./build-apk.sh
+APP_URL=https://yaokao-suji.netlify.app/ ./build-apk.sh
 ```
 
 构建结果为 `android-webview/dist/yaokao-suji-demo.apk`。签名和发布说明见 [Android README](android-webview/README.md)。
