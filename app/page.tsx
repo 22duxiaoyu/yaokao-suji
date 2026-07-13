@@ -195,13 +195,22 @@ export default function LandingPage() {
             </div>
           </div>
           <div className={styles.downloadStage}>
-            <Image
-              className={styles.downloadPhone}
-              src="/product/review.png"
-              width={804}
-              height={1748}
-              alt="药考速记 Android 应用"
-            />
+            <div className={styles.androidFrame}>
+              <div className={styles.androidScreen}>
+                <div className={styles.androidStatus} aria-hidden="true">
+                  <span>9:41</span>
+                  <i />
+                  <span>● ● ●</span>
+                </div>
+                <Image
+                  className={styles.downloadPhone}
+                  src="/product/review-android.png"
+                  width={804}
+                  height={1600}
+                  alt="药考速记 Android 应用"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
