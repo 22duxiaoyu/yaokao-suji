@@ -9,6 +9,7 @@
 - 产品官网：[https://yaokao-suji.netlify.app](https://yaokao-suji.netlify.app)
 - 在线体验：[https://yaokao-suji.netlify.app/app](https://yaokao-suji.netlify.app/app)
 - Android 下载：[GitHub Releases](https://github.com/22duxiaoyu/yaokao-suji/releases/latest)
+- 开源许可：[MIT License](LICENSE)
 
 ## 核心流程
 
@@ -140,3 +141,7 @@ GitHub Actions 会在每次提交和 Pull Request 上运行类型检查与正式
 - RAG v1 使用可解释的关键词混合召回，向量召回接口和元数据已预留。
 - 上传文件在本地开发时写磁盘，在 Serverless 环境使用 Supabase 私有桶。
 - APK 仅用于作品展示，不冒充应用商店正式发行版本。
+
+## 开源许可
+
+本项目采用 [MIT License](LICENSE) 开源。你可以使用、修改和分发代码，但需保留原始版权和许可声明。
